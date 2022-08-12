@@ -1,0 +1,36 @@
+.track>form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 4px 2px inset;
+    padding: 2em;
+    margin: 1em 3em;
+    padding-bottom: 2em;
+}
+
+.track>h2 {
+    text-align: center;
+    padding: 1.5em;
+    color: rgb(2, 3, 129);
+}
+
+.track>form>input,
+.track>form>button {
+    height: 40px;
+    width: 50%;
+    margin: 1em 0;
+    border-radius: 5px;
+    outline: none;
+}
+
+.track>form>input {
+    padding-left: 1em;
+}
+
+.track>form>button {
+    background-color: green;
+    border: none;
+    padding: 0 2em;
+    color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,98 @@
+.flex {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    align-items: center;
+    box-shadow: 2px 2px 4px 0px inset;
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    background-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex>article {
+    color: rgb(2, 3, 129);
+}
+
+.flex>button {
+    background-color: rgb(2, 3, 129);
+    height: 40px;
+    color: white;
+    border: none;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.flex>nav {
+    grid-column: span 2;
+    margin: 2em 0;
+}
+
+.flex>nav>ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.flex>nav>ul>li {
+    padding-left: 3em;
+}
+
+.flex>nav>ul>li>a {
+    padding-left: 1em;
+    text-decoration: none;
+    color: black;
+}
+
+.flex>button:nth-of-type(2) {
+    display: none;
+}
+
+@media (max-width:800px) {
+    .flex>button:nth-of-type(2)>img {
+        width: 20px;
+    }
+    .flex>nav {
+        grid-column: span 0;
+        margin: 2em 0;
+        display: none;
+    }
+    .flex>nav>ul {
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .flex>nav>ul>li {
+        padding-left: 0em;
+        padding: 1em 0;
+        border-bottom: 1px solid black;
+        width: 100%;
+    }
+    .flex {
+        grid-template-columns: 92% 1fr;
+    }
+    .flex>button:nth-of-type(1) {
+        display: none;
+    }
+    .flex>button:nth-of-type(2) {
+        order: -2;
+        background-color: black;
+        width: 100%;
+        display: block;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .flex>article {
+        color: rgb(2, 3, 129);
+        order: -2;
+    }
+    .flex>button:nth-of-type(2):hover {
+        background-color: rgb(2, 3, 129);
+    }
+}

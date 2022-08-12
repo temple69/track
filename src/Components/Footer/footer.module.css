@@ -1,0 +1,27 @@
+.footer {
+    padding: 1em 2em;
+    background-color: #f9f9f9;
+}
+
+.footer>section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    place-content: center center;
+}
+
+.footer>section>div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.copy {
+    text-decoration: none;
+    padding-top: 2em;
+    text-align: center;
+}

@@ -1,0 +1,46 @@
+.grid>div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2em;
+}
+
+.grid {
+    padding: 1em 2em;
+}
+
+.grid>div>figure>img {
+    height: 200px;
+    width: 100%;
+}
+
+.grid>div>figure {
+    box-shadow: 2px 2px 4px 0px inset;
+}
+
+.grid>div>figure>figcaption {
+    text-align: center;
+    padding: .4em 0;
+}
+
+.oil {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-top: 2em;
+    padding: 1em;
+    align-items: center;
+    gap: 2em;
+}
+
+.oil>div>img {
+    width: 100%;
+    height: 50vmin;
+}
+
+.oil>div>p>a {
+    text-decoration: none;
+    align-self: center;
+}
+
+.oil>div>p {
+    padding-top: 1em;
+}

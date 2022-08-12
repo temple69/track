@@ -1,0 +1,15 @@
+.overview>div>article {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: .6em;
+}
+
+.overview>div>article>h4 {
+    color: rgb(2, 3, 129);
+    ;
+}
+
+.overview {
+    padding: 1em 2em;
+}

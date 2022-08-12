@@ -1,0 +1,8 @@
+.about {
+    padding: 1em 2em;
+}
+
+.about>p,
+.about>small {
+    line-height: 1.5em;
+}
