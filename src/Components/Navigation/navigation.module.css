@@ -8,6 +8,7 @@
     top: 0;
     z-index: 4;
     background-color: white;
+    min-width: 300px;
 }
 
 * {
@@ -54,13 +55,26 @@
     display: none;
 }
 
+.navhide {
+    display: none;
+}
+
+.navshow {
+    display: block;
+}
+
 @media (max-width:800px) {
+    .navhide {
+        display: block;
+    }
+    .navshow {
+        display: none;
+    }
     .flex>button:nth-of-type(2)>img {
         width: 20px;
     }
     .flex>nav {
         grid-column: span 0;
-        margin: 2em 0;
     }
     .flex>nav>ul {
         justify-content: center;

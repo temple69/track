@@ -1,13 +1,14 @@
 .footer {
     padding: 1em 2em;
     background-color: #f9f9f9;
+    min-width: 300px;
 }
 
 .footer>section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2em;
-    place-content: center center;
+    justify-content: center;
 }
 
 .footer>section>div {
@@ -24,4 +25,10 @@ a {
     text-decoration: none;
     padding-top: 2em;
     text-align: center;
+}
+
+@media (max-width:375px) {
+    .footer>section {
+        text-align: center;
+    }
 }
