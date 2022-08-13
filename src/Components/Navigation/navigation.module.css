@@ -61,7 +61,6 @@
     .flex>nav {
         grid-column: span 0;
         margin: 2em 0;
-        display: none;
     }
     .flex>nav>ul {
         justify-content: center;
